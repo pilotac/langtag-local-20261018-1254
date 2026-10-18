@@ -18,7 +18,7 @@ jobs:
         with:
           go-version-file: go.mod
 
-      # Vet before running the tests.
+      # Vet first, then run the tests.
       - name: Vet
         run: go vet ./...
 
